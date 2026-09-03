@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Shift Status Flags.vcxproj" />
+  <Project Path="Shift Status Flags.vcxproj" Id="d1b74ba6-8771-4b4d-a1c6-70f9f4cd0330" />
 </Solution>
