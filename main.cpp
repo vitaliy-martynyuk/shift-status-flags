@@ -37,5 +37,13 @@ int main()
 	printShiftFlag(supervisorRequiredLabel, testFlags(shiftFlags, supervisorRequired));
 	printShiftFlag(payrollReviewLabel, testFlags(shiftFlags, payrollReview));
 
+	shiftFlags = resetFlags(shiftFlags, supervisorRequired);
+	std::cout << "[[ADMIN]]: Sign off completed.\n";
+	std::cout << testFlags(shiftFlags, supervisorRequired) << '\n';
+
+	shiftFlags = toggleFlags(shiftFlags, payrollReview);
+	std::cout << "[[ADMIN]]: Payroll review toggled.\n";
+	std::cout << testFlags(shiftFlags, payrollReview) << '\n';
+
 	return EXIT_SUCCESS;
 }
